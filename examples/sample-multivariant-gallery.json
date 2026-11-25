@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "id": "turnaround-poses-demo",
+  "version": "1.0.0",
+  "name": "多视角姿势示例库",
+  "nameEn": "Multi-Angle Poses Demo",
+  "description": "展示如何用 Format 1 标准接口声明多视角/多变体（variants[]）扩展图库。",
+  "icon": "🧍",
+  "author": "YourName",
+  "license": "MIT",
+  "upstreamUrl": "https://github.com/yourname/turnaround-poses-demo",
+  "promptRole": "pose",
+  "supportsRefImage": true,
+  "localOnly": true,
+  "multiVariant": true,
+  "imageMirrors": {
+    "gitee": "https://gitee.com/yourname/turnaround-poses-demo/raw/main/",
+    "github": "https://raw.githubusercontent.com/yourname/turnaround-poses-demo/main/"
+  },
+  "items": [
+    {
+      "id": "pose-stand-01",
+      "name": "自然站姿",
+      "nameEn": "Natural Standing",
+      "category": "站姿",
+      "categoryName": "站姿",
+      "tags": ["基础", "站姿", "全身"],
+      "traits": "基础 · 站姿 · 3视角",
+      "promptZh": "参考自然站姿人体比例与重心",
+      "promptEn": "natural standing pose",
+      "remoteThumb": "thumbs/stand-01_front.webp",
+      "remoteImage": "images/stand-01_front.png",
+      "variants": [
+        {
+          "key": "front",
+          "label": "正面",
+          "labelEn": "Front",
+          "remoteThumb": "thumbs/stand-01_front.webp",
+          "remoteImage": "images/stand-01_front.png"
+        },
+        {
+          "key": "diagonal",
+          "label": "斜侧",
+          "labelEn": "Three-quarter",
+          "remoteThumb": "thumbs/stand-01_diag.webp",
+          "remoteImage": "images/stand-01_diag.png"
+        },
+        {
+          "key": "side",
+          "label": "侧面",
+          "labelEn": "Side",
+          "remoteThumb": "thumbs/stand-01_side.webp",
+          "remoteImage": "images/stand-01_side.png"
+        }
+      ],
+      "author": "YourName"
+    }
+  ]
+}

@@ -5,8 +5,12 @@
     "en": "Handraw Official Gallery Market"
   },
   "description": {
-    "zh": "手绘风客户端官方扩展图库插件索引，收录开源视觉参考图鉴与社区贡献图库插件，全部支持按需选装、仅本机缓存。",
-    "en": "Official extension gallery plugin registry for Handraw Client. Curated open-source visual reference libraries installed on demand and cached strictly locally."
+    "zh": "手绘风客户端（Handraw）官方扩展图库插件市场：所有图库遵循统一 Format 1 标准接口，支持社区 PR 投稿，由用户按需选装且仅缓存在本机。",
+    "en": "Official extension gallery plugin market for Handraw. All galleries follow the unified Format 1 interface, accept community PRs, and install locally on demand."
+  },
+  "mirrors": {
+    "gitee": "https://gitee.com/yang02010/handraw-galleries/raw/main/index.json",
+    "github": "https://raw.githubusercontent.com/yang0/handraw-galleries/main/index.json"
   },
   "metadata": {
     "categories": {
@@ -24,11 +28,20 @@
       },
       "style": {
         "title": { "zh": "风格与色彩", "en": "Styles & Colors" }
+      },
+      "character": {
+        "title": { "zh": "角色设定", "en": "Characters" }
+      },
+      "layout": {
+        "title": { "zh": "构图与版式", "en": "Layouts" }
       }
     },
     "labels": {
       "official-curated": {
-        "title": { "zh": "官方收录", "en": "Curated" }
+        "title": { "zh": "官方精选", "en": "Official Curated" }
+      },
+      "community": {
+        "title": { "zh": "社区投稿", "en": "Community" }
       },
       "open-source": {
         "title": { "zh": "开源图鉴", "en": "Open Source" }
@@ -37,7 +50,10 @@
         "title": { "zh": "仅本机缓存", "en": "Local Only" }
       },
       "multi-variant": {
-        "title": { "zh": "多视角可选", "en": "Multi-Angle" }
+        "title": { "zh": "多视角", "en": "Multi-Angle" }
+      },
+      "offline-zip": {
+        "title": { "zh": "离线整包", "en": "Offline ZIP" }
       }
     }
   },
@@ -59,15 +75,14 @@
       "promptRole": "pose",
       "supportsRefImage": true,
       "source": {
-        "type": "ruic-poseatlas",
-        "packId": "ruic-poses",
-        "dataPath": "data/poses.json",
+        "type": "json",
+        "url": "https://raw.githubusercontent.com/yang0/handraw-gallery-ruic-poseatlas/main/galleries/ruic-poses.json",
         "mirrors": {
-          "gitee": "https://gitee.com/mingtian2018/RuiC-PoseAtlas/raw/main/",
-          "github": "https://raw.githubusercontent.com/HRuiCcc/RuiC-PoseAtlas/main/"
+          "gitee": "https://gitee.com/yang02010/handraw-gallery-ruic-poseatlas/raw/main/galleries/ruic-poses.json",
+          "github": "https://raw.githubusercontent.com/yang0/handraw-gallery-ruic-poseatlas/main/galleries/ruic-poses.json"
         },
-        "upstreamUrl": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
-        "mirrorUrl": "https://gitee.com/mingtian2018/RuiC-PoseAtlas"
+        "upstreamUrl": "https://github.com/yang0/handraw-gallery-ruic-poseatlas",
+        "mirrorUrl": "https://gitee.com/yang02010/handraw-gallery-ruic-poseatlas"
       }
     },
     {
@@ -86,15 +101,14 @@
       "promptRole": "costume",
       "supportsRefImage": true,
       "source": {
-        "type": "ruic-poseatlas",
-        "packId": "ruic-costumes",
-        "dataPath": "data/costumes.json",
+        "type": "json",
+        "url": "https://raw.githubusercontent.com/yang0/handraw-gallery-ruic-poseatlas/main/galleries/ruic-costumes.json",
         "mirrors": {
-          "gitee": "https://gitee.com/mingtian2018/RuiC-PoseAtlas/raw/main/",
-          "github": "https://raw.githubusercontent.com/HRuiCcc/RuiC-PoseAtlas/main/"
+          "gitee": "https://gitee.com/yang02010/handraw-gallery-ruic-poseatlas/raw/main/galleries/ruic-costumes.json",
+          "github": "https://raw.githubusercontent.com/yang0/handraw-gallery-ruic-poseatlas/main/galleries/ruic-costumes.json"
         },
-        "upstreamUrl": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
-        "mirrorUrl": "https://gitee.com/mingtian2018/RuiC-PoseAtlas"
+        "upstreamUrl": "https://github.com/yang0/handraw-gallery-ruic-poseatlas",
+        "mirrorUrl": "https://gitee.com/yang02010/handraw-gallery-ruic-poseatlas"
       }
     },
     {
@@ -113,15 +127,14 @@
       "promptRole": "face",
       "supportsRefImage": true,
       "source": {
-        "type": "ruic-poseatlas",
-        "packId": "ruic-faces",
-        "dataPath": "data/faces.json",
+        "type": "json",
+        "url": "https://raw.githubusercontent.com/yang0/handraw-gallery-ruic-poseatlas/main/galleries/ruic-faces.json",
         "mirrors": {
-          "gitee": "https://gitee.com/mingtian2018/RuiC-PoseAtlas/raw/main/",
-          "github": "https://raw.githubusercontent.com/HRuiCcc/RuiC-PoseAtlas/main/"
+          "gitee": "https://gitee.com/yang02010/handraw-gallery-ruic-poseatlas/raw/main/galleries/ruic-faces.json",
+          "github": "https://raw.githubusercontent.com/yang0/handraw-gallery-ruic-poseatlas/main/galleries/ruic-faces.json"
         },
-        "upstreamUrl": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
-        "mirrorUrl": "https://gitee.com/mingtian2018/RuiC-PoseAtlas"
+        "upstreamUrl": "https://github.com/yang0/handraw-gallery-ruic-poseatlas",
+        "mirrorUrl": "https://gitee.com/yang02010/handraw-gallery-ruic-poseatlas"
       }
     }
   ]

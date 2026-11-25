@@ -1,25 +1,35 @@
 {
-  "id": "sample-hairstyles",
-  "name": "示例发型图鉴",
-  "nameEn": "Sample Hairstyles",
-  "description": "演示如何编写一个声明式手绘风扩展图库插件 JSON（可直接通过链接安装或在 index.json 中收录）。",
-  "promptRole": "hairstyle",
+  "format": 1,
+  "id": "cozy-props-demo",
+  "version": "1.0.0",
+  "name": "温馨小道具示例库",
+  "nameEn": "Cozy Props Demo",
+  "description": "展示如何用单一标准 Format 1 JSON 文件发布可被手绘风扩展图库市场收录的图库插件。",
+  "icon": "🪴",
+  "author": "YourName",
+  "license": "CC-BY-4.0",
+  "upstreamUrl": "https://github.com/yourname/cozy-props-demo",
+  "promptRole": "prop",
   "supportsRefImage": true,
   "localOnly": true,
-  "license": "MIT",
+  "imageMirrors": {
+    "gitee": "https://gitee.com/yourname/cozy-props-demo/raw/main/",
+    "github": "https://raw.githubusercontent.com/yourname/cozy-props-demo/main/"
+  },
   "items": [
     {
-      "id": "HS-001",
-      "name": "蓬松高丸子头",
-      "nameEn": "Fluffy High Bun",
-      "category": "updo",
-      "categoryName": "盘发",
-      "tags": ["丸子头", "日系", "清新"],
-      "traits": "蓬松高盘丸子头，几缕柔和碎发垂落耳侧与额前，轮廓轻盈自然",
-      "promptZh": "蓬松高盘丸子头，耳侧垂落柔和碎发，自然空气感刘海",
-      "promptEn": "fluffy high hair bun with soft loose wisps framing the ears and airy bangs",
-      "remoteImage": "images/hs-001.webp",
-      "remoteThumb": "thumbs/hs-001.webp"
+      "id": "prop-lamp-01",
+      "name": "暖黄台灯",
+      "nameEn": "Warm Desk Lamp",
+      "category": "lighting",
+      "categoryName": "灯具",
+      "tags": ["台灯", "暖光", "书桌"],
+      "traits": "黄铜底座，百褶暖白灯罩，柔和暖光",
+      "promptZh": "参考黄铜百褶暖光台灯的造型与材质",
+      "promptEn": "brass pleated warm desk lamp",
+      "remoteThumb": "thumbs/prop-lamp-01.webp",
+      "remoteImage": "images/prop-lamp-01.png",
+      "author": "YourName"
     }
   ]
 }
