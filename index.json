@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "手绘风官方图库市场",
+    "en": "Handraw Official Gallery Market"
+  },
+  "description": {
+    "zh": "手绘风客户端官方扩展图库插件索引，收录开源视觉参考图鉴与社区贡献图库插件，全部支持按需选装、仅本机缓存。",
+    "en": "Official extension gallery plugin registry for Handraw Client. Curated open-source visual reference libraries installed on demand and cached strictly locally."
+  },
+  "metadata": {
+    "categories": {
+      "pose": {
+        "title": { "zh": "人体姿态", "en": "Poses" }
+      },
+      "costume": {
+        "title": { "zh": "服装穿搭", "en": "Costumes" }
+      },
+      "portrait": {
+        "title": { "zh": "人像与造型", "en": "Portraits" }
+      },
+      "scene": {
+        "title": { "zh": "场景与道具", "en": "Scenes & Props" }
+      },
+      "style": {
+        "title": { "zh": "风格与色彩", "en": "Styles & Colors" }
+      }
+    },
+    "labels": {
+      "official-curated": {
+        "title": { "zh": "官方收录", "en": "Curated" }
+      },
+      "open-source": {
+        "title": { "zh": "开源图鉴", "en": "Open Source" }
+      },
+      "local-only": {
+        "title": { "zh": "仅本机缓存", "en": "Local Only" }
+      },
+      "multi-variant": {
+        "title": { "zh": "多视角可选", "en": "Multi-Angle" }
+      }
+    }
+  },
+  "galleries": [
+    {
+      "id": "ruic-poses",
+      "version": "1.0.0",
+      "name": "姿态图鉴",
+      "nameEn": "RuiC Poses",
+      "badge": "288组 × 5视角",
+      "description": "288 组人体姿态 × 5 视角（正面/斜侧/侧面/俯视/仰视）共 1,439 张人台线稿参考，支持精确选角度入图。",
+      "author": "HRuiCcc",
+      "license": "MIT",
+      "homepage": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
+      "categories": ["pose"],
+      "labels": ["official-curated", "open-source", "local-only", "multi-variant"],
+      "multiVariant": true,
+      "localOnly": true,
+      "promptRole": "pose",
+      "supportsRefImage": true,
+      "source": {
+        "type": "ruic-poseatlas",
+        "packId": "ruic-poses",
+        "dataPath": "data/poses.json",
+        "mirrors": {
+          "gitee": "https://gitee.com/mingtian2018/RuiC-PoseAtlas/raw/main/",
+          "github": "https://raw.githubusercontent.com/HRuiCcc/RuiC-PoseAtlas/main/"
+        },
+        "upstreamUrl": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
+        "mirrorUrl": "https://gitee.com/mingtian2018/RuiC-PoseAtlas"
+      }
+    },
+    {
+      "id": "ruic-costumes",
+      "version": "1.0.0",
+      "name": "衣装图鉴",
+      "nameEn": "RuiC Costumes",
+      "badge": "1,407 套服饰",
+      "description": "1,407 套无人物服饰单品图鉴 × 8 季节与风格分类，适合固定穿搭、服饰材质与廓形参考。",
+      "author": "HRuiCcc",
+      "license": "MIT",
+      "homepage": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
+      "categories": ["costume"],
+      "labels": ["official-curated", "open-source", "local-only"],
+      "localOnly": true,
+      "promptRole": "costume",
+      "supportsRefImage": true,
+      "source": {
+        "type": "ruic-poseatlas",
+        "packId": "ruic-costumes",
+        "dataPath": "data/costumes.json",
+        "mirrors": {
+          "gitee": "https://gitee.com/mingtian2018/RuiC-PoseAtlas/raw/main/",
+          "github": "https://raw.githubusercontent.com/HRuiCcc/RuiC-PoseAtlas/main/"
+        },
+        "upstreamUrl": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
+        "mirrorUrl": "https://gitee.com/mingtian2018/RuiC-PoseAtlas"
+      }
+    },
+    {
+      "id": "ruic-faces",
+      "version": "1.0.0",
+      "name": "人像图鉴",
+      "nameEn": "RuiC Faces",
+      "badge": "1,499 张人像",
+      "description": "1,499 张正面脸部与造型参考，按脸部/造型与 4 种发长分类，适合固定角色颜值与发型气质。",
+      "author": "HRuiCcc",
+      "license": "MIT",
+      "homepage": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
+      "categories": ["portrait"],
+      "labels": ["official-curated", "open-source", "local-only"],
+      "localOnly": true,
+      "promptRole": "face",
+      "supportsRefImage": true,
+      "source": {
+        "type": "ruic-poseatlas",
+        "packId": "ruic-faces",
+        "dataPath": "data/faces.json",
+        "mirrors": {
+          "gitee": "https://gitee.com/mingtian2018/RuiC-PoseAtlas/raw/main/",
+          "github": "https://raw.githubusercontent.com/HRuiCcc/RuiC-PoseAtlas/main/"
+        },
+        "upstreamUrl": "https://github.com/HRuiCcc/RuiC-PoseAtlas",
+        "mirrorUrl": "https://gitee.com/mingtian2018/RuiC-PoseAtlas"
+      }
+    }
+  ]
+}
