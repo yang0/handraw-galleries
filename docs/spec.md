@@ -120,6 +120,22 @@
 1. **`json`**（推荐）：指向符合本文第一节规范的 Format 1 `gallery.json`。推荐同时在 `source.mirrors` 中提供 `gitee` 与 `github` 两个地址，方便国内外用户流畅安装。
 2. **`zip`**：指向离线 `.zip` 压缩包（内含 `gallery.json` 与相对路径图片，单包上限 150 MB，单图上限 25 MB，禁止包含 `..` 或绝对路径）。
 
+### 可选商业化扩展字段（向后兼容，免费图库可省略）
+
+```json
+"pricing": {
+  "model": "free",
+  "credits": 0,
+  "priceCents": 0
+},
+"delivery": {
+  "auth": "none"
+}
+```
+
+- `pricing.model`：`free`（默认）｜`pro`（会员专属）｜`credits`（积分兑换）｜`paid`（单品购买）。
+- `delivery.auth`：`none`（默认公开直下）｜`handraw-account`（需带手绘风登录态向官网换取短期下载链接）。
+
 ---
 
 ## 三、自动化校验
